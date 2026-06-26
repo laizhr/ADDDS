@@ -1,0 +1,33 @@
+
+wandb_project_name: NonconvexSampling
+tags: experiments
+
+
+mode: sample
+score_method: recursive
+p0t_method: rejection
+reuse_samples: no
+
+
+
+max_iters_optimization: 50
+num_estimator_batches: 5
+num_estimator_samples: 10000
+
+num_sampler_iterations: 100
+ula_step_size: 0.001
+num_recursive_steps: 2
+
+
+sde_type: vp
+multiplier: 0
+bias: 2
+
+
+sampling_method: ei
+num_batches: 1
+sampling_batch_size: 1000
+T: 5
+sampling_eps: 5e-3
+disc_steps: 25
+ula_steps: 0

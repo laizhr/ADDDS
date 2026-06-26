@@ -1,0 +1,30 @@
+
+mode: eval_mmd
+score_method: p0t
+p0t_method: rejection
+methods_to_run: [ADDDS, ZOD-MC, RSDMC, RDMC, SLIPS]
+baselines: []
+num_samples_for_rdmc: 100
+sampling_eps_rdmc: 5e-3
+min_num_iters_rdmc: 11
+max_num_iters_rdmc: 21
+iters_rdmc_step: 10
+ula_step_size: 0.0005
+sampling_eps_rejec: 5e-4
+langevin_step_size: 0.0005
+proximal_M: 30
+proximal_num_iters: 100
+max_iters_optimization: 50
+sde_type: vp
+multiplier: 0
+bias: 2
+sampling_method: ei
+num_batches: 1
+sampling_batch_size: 1000
+T: 2
+sampling_eps: 5e-3
+disc_steps: 50
+ula_steps: 0
+added_noise_std_for_reg: 0.01
+optimizer_reg_lambda: 1
+perturbation_mode: fgsm
